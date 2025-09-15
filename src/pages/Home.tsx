@@ -42,7 +42,7 @@ const Home = () => {
     {
       name: 'Sarah Johnson',
       role: 'CEO, TechStart Inc.',
-      content: 'BrandCraft transformed our entire brand identity. The results exceeded our expectations.',
+      content: 'VConnect360 transformed our entire brand identity. The results exceeded our expectations.',
       image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
     {
@@ -54,7 +54,7 @@ const Home = () => {
     {
       name: 'Emily Rodriguez',
       role: 'Founder, Innovate Labs',
-      content: 'Professional, innovative, and results-driven. BrandCraft is our trusted partner.',
+      content: 'Professional, innovative, and results-driven. VConnect360 is our trusted partner.',
       image: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
   ];
@@ -62,9 +62,9 @@ const Home = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BrandCraft",
-    "url": "https://brandcraft.com",
-    "logo": "https://brandcraft.com/logo.png",
+    "name": "VConnect360",
+    "url": "https://VConnect360.com",
+    "logo": "https://VConnect360.com/logo.png",
     "description": "Professional branding and marketing agency specializing in brand strategy, digital marketing, and creative design.",
     "address": {
       "@type": "PostalAddress",
@@ -103,7 +103,7 @@ const Home = () => {
             >
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 Craft Your Brand's{' '}
-                <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                   Success Story
                 </span>
               </h1>
@@ -121,14 +121,14 @@ const Home = () => {
             >
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-600 to-amber-500 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/portfolio"
-                className="inline-flex items-center px-8 py-4 bg-white text-gray-800 font-semibold rounded-lg border-2 border-gray-200 hover:border-teal-600 hover:text-teal-600 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-gray-800 font-semibold rounded-lg border-2 border-gray-200 hover:border-[#4f6ff2] hover:text-[#4f6ff2] transition-all duration-300 shadow-lg"
               >
                 View Our Work
               </Link>
@@ -141,12 +141,12 @@ const Home = () => {
           <motion.div
             animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute top-1/4 left-10 w-16 h-16 bg-gradient-to-r from-teal-400 to-amber-400 rounded-full opacity-20"
+            className="absolute top-1/4 left-10 w-16 h-16 bg-gradient-to-r from-[#00b4d8] to-[#0096c7] rounded-full opacity-20"
           />
           <motion.div
             animate={{ y: [20, -20, 20], rotate: [0, -5, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute bottom-1/3 right-10 w-20 h-20 bg-gradient-to-r from-amber-400 to-teal-400 rounded-full opacity-15"
+            className="absolute bottom-1/3 right-10 w-20 h-20 bg-gradient-to-r from-[#0096c7] to-[#00b4d8] rounded-full opacity-15"
           />
         </div>
       </section>
@@ -164,8 +164,8 @@ const Home = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-100 to-amber-100 rounded-full mb-4">
-                  <stat.icon className="h-8 w-8 text-teal-600" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-4">
+                  <stat.icon className="h-8 w-8 text-[#4f6ff2]" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                   {stat.value}
@@ -215,13 +215,13 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#4f6ff2] transition-colors duration-300">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link
                     to="/services"
-                    className="inline-flex items-center text-teal-600 font-medium group-hover:text-amber-500 transition-colors duration-300"
+                    className="inline-flex items-center text-[#4f6ff2] font-medium group-hover:text-[#1fa1df] transition-colors duration-300"
                   >
                     Learn More
                     <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -261,7 +261,7 @@ const Home = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="bg-gray-50 rounded-xl p-8 relative"
               >
-                <Quote className="h-8 w-8 text-teal-600 mb-4 opacity-60" />
+                <Quote className="h-8 w-8 text-[#4f6ff2] mb-4 opacity-60" />
                 <p className="text-gray-700 mb-6 italic">
                   "{testimonial.content}"
                 </p>
@@ -283,7 +283,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-amber-500">
+      <section className="py-20 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -302,14 +302,14 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-white text-teal-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#4f6ff2] font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <CheckCircle className="mr-2 h-5 w-5" />
                 Get Started Today
               </Link>
               <Link
                 to="/portfolio"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-teal-600 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#4f6ff2] transition-all duration-300 shadow-lg"
               >
                 View Case Studies
               </Link>

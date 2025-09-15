@@ -119,12 +119,6 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: MapPin,
-      title: 'Visit Our Office',
-      content: '123 Business Ave, Suite 100\nNew York, NY 10001',
-      action: 'Get Directions'
-    },
-    {
       icon: Phone,
       title: 'Call Us',
       content: '+1 (555) 123-4567\nMon-Fri, 9AM-6PM EST',
@@ -133,7 +127,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@brandcraft.com\nWe respond within 24 hours',
+      content: 'hello@VConnect360.com\nWe respond within 24 hours',
       action: 'Send Email'
     },
     {
@@ -141,6 +135,12 @@ const Contact = () => {
       title: 'Live Chat',
       content: 'Available during business hours\nGet instant responses',
       action: 'Start Chat'
+    },
+    {
+      icon: MapPin,
+      title: 'Visit Our Office',
+      content: '123 Business Ave, Suite 100\nNew York, NY 10001',
+      action: 'Get Directions'
     }
   ];
 
@@ -149,9 +149,9 @@ const Contact = () => {
     "@type": "ContactPage",
     "mainEntity": {
       "@type": "Organization",
-      "name": "BrandCraft",
+      "name": "VConnect360",
       "telephone": "+1-555-123-4567",
-      "email": "hello@brandcraft.com",
+      "email": "hello@VConnect360.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Business Ave, Suite 100",
@@ -169,7 +169,7 @@ const Contact = () => {
       <>
         <SEO
           title="Thank You - Message Received"
-          description="Thank you for contacting BrandCraft. We've received your message and will respond within 24 hours."
+          description="Thank you for contacting VConnect360. We've received your message and will respond within 24 hours."
         />
         <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
           <motion.div
@@ -178,8 +178,8 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-md mx-auto text-center p-8"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-teal-100 to-amber-100 rounded-full mb-6">
-              <CheckCircle className="h-10 w-10 text-teal-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-6">
+              <CheckCircle className="h-10 w-10 text-[#4f6ff2]" />
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Message Sent!</h1>
             <p className="text-xl text-gray-600 mb-8">
@@ -187,7 +187,7 @@ const Contact = () => {
             </p>
             <button
               onClick={() => setSubmitted(false)}
-              className="px-8 py-3 bg-gradient-to-r from-teal-600 to-amber-500 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-300"
+              className="px-8 py-3 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300"
             >
               Send Another Message
             </button>
@@ -201,7 +201,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us - Let's Start Your Project"
-        description="Ready to transform your brand? Contact BrandCraft today. Get in touch for a free consultation and discover how we can help grow your business."
+        description="Ready to transform your brand? Contact VConnect360 today. Get in touch for a free consultation and discover how we can help grow your business."
         keywords={['contact us', 'free consultation', 'get quote', 'brand consultation']}
         structuredData={structuredData}
       />
@@ -217,7 +217,7 @@ const Contact = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Let's{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                 Connect
               </span>
             </h1>
@@ -242,12 +242,12 @@ const Contact = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center p-6 bg-gray-50 rounded-xl hover:bg-gradient-to-br hover:from-teal-50 hover:to-amber-50 transition-all duration-300 group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-100 to-amber-100 rounded-full mb-4 group-hover:from-teal-600 group-hover:to-amber-500 transition-all duration-300">
-                  <info.icon className="h-8 w-8 text-teal-600 group-hover:text-white transition-colors duration-300" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-4 group-hover:from-[#4f6ff2] group-hover:to-[#1fa1df] transition-all duration-300">
+                  <info.icon className="h-8 w-8 text-[#4f6ff2] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">{info.title}</h3>
                 <p className="text-gray-600 mb-4 whitespace-pre-line">{info.content}</p>
-                <button className="text-teal-600 font-medium hover:text-amber-500 transition-colors duration-300">
+                <button className="text-[#4f6ff2] font-medium hover:text-[#1fa1df] transition-colors duration-300">
                   {info.action}
                 </button>
               </motion.div>
@@ -482,7 +482,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-teal-600 to-amber-500 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:transform-none flex items-center justify-center"
+                  className="w-full px-8 py-4 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:transform-none flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>
@@ -513,7 +513,7 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] rounded-full flex items-center justify-center text-white text-sm font-bold">
                       1
                     </div>
                     <div>
@@ -523,7 +523,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] rounded-full flex items-center justify-center text-white text-sm font-bold">
                       2
                     </div>
                     <div>
@@ -533,7 +533,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] rounded-full flex items-center justify-center text-white text-sm font-bold">
                       3
                     </div>
                     <div>
@@ -546,23 +546,23 @@ const Contact = () => {
 
               <div className="bg-gradient-to-r from-teal-50 to-amber-50 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Why Choose BrandCraft?
+                  Why Choose VConnect360?
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-teal-600 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#4f6ff2] mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Proven track record with 500+ successful projects</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-teal-600 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#4f6ff2] mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Award-winning creative and strategic expertise</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-teal-600 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#4f6ff2] mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Dedicated project management and support</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-teal-600 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#4f6ff2] mr-3 flex-shrink-0" />
                     <span className="text-gray-700">98% client satisfaction rate</span>
                   </li>
                 </ul>
@@ -570,7 +570,7 @@ const Contact = () => {
 
               <div className="bg-white p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Clock className="w-6 h-6 text-teal-600 mr-2" />
+                  <Clock className="w-6 h-6 text-[#4f6ff2] mr-2" />
                   Office Hours
                 </h3>
                 <div className="space-y-2 text-gray-600">
@@ -588,7 +588,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="mt-4 p-3 bg-teal-50 rounded-lg">
-                  <p className="text-sm text-teal-700">
+                  <p className="text-sm text-[#03045e]">
                     <strong>Need urgent help?</strong> Email us anytime and we'll respond as soon as possible.
                   </p>
                 </div>

@@ -1,8 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
-  Sparkles, 
   MapPin, 
   Phone, 
   Mail, 
@@ -37,50 +35,37 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <footer className="bg-gray-950 text-gray-300 font-serif">
+      <div className="container mx-auto px-6 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-1"
+            className="lg:col-span-1 mt-16"
           >
-            <Link to="/" className="flex items-center space-x-2 mb-6 group">
-              <div className="relative">
-                <Sparkles className="h-8 w-8 text-teal-400 group-hover:text-amber-400 transition-colors duration-300" />
-                <motion.div
-                  className="absolute inset-0"
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                >
-                  <Sparkles className="h-8 w-8 text-amber-400 opacity-30" />
-                </motion.div>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-amber-400 bg-clip-text text-transparent">
-                BrandCraft
-              </span>
+            <Link to="/" className="flex items-center space-x-3 group mb-6">
+              <img
+                src="/logo2.png"
+                alt="VConnect360 Logo"
+                className="h-14 w-14 object-contain group-hover:opacity-90 transition-opacity duration-300"
+              />
+              <span className="text-3xl font-bold text-[#1486e5] tracking-wide">VConnect360</span>
             </Link>
-            <p className="text-gray-300 mb-6">
-              Crafting exceptional brand experiences that drive growth and inspire audiences. 
-              Your vision, our expertise.
-            </p>
-            
-            {/* Contact Info */}
-            <div className="space-y-3">
+            <div className="space-y-4 text-sm">
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">123 Business Ave, Suite 100, NY 10001</span>
+                <MapPin className="h-5 w-5 text-[#1e40af]" />
+                <span>123 Business Ave, Suite 100, NY 10001</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <Phone className="h-5 w-5 text-[#1e40af]" />
+                <span>+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">hello@brandcraft.com</span>
+                <Mail className="h-5 w-5 text-[#1e40af]" />
+                <span>hello@VConnect360.com</span>
               </div>
             </div>
           </motion.div>
@@ -91,18 +76,19 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-16"
           >
-            <h3 className="text-lg font-semibold mb-6 text-amber-400">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
+            <h3 className="text-xl font-semibold mb-6   pb-2 text-[#1486e5]">Quick Links</h3>
+            <ul className="space-y-3 text-base">
+              {quickLinks.map((link) => (
                 <motion.li
                   key={link.to}
-                  whileHover={{ x: 5 }}
+                  whileHover={{ x: 8 }}
                   transition={{ duration: 0.2 }}
                 >
                   <Link
                     to={link.to}
-                    className="text-gray-300 hover:text-teal-400 transition-colors duration-200"
+                    className="hover:underline text-gray-300 transition"
                   >
                     {link.label}
                   </Link>
@@ -117,9 +103,10 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-16"
           >
-            <h3 className="text-lg font-semibold mb-6 text-amber-400">Services</h3>
-            <ul className="space-y-3">
+            <h3 className="text-xl font-semibold mb-6   pb-2 text-[#1486e5]">Services</h3>
+            <ul className="space-y-3 text-base">
               {services.map((service, index) => (
                 <li key={index} className="text-gray-300">
                   {service}
@@ -134,42 +121,40 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-16"
           >
-            <h3 className="text-lg font-semibold mb-6 text-amber-400">Stay Connected</h3>
-            <p className="text-gray-300 mb-4">
+            <h3 className="text-xl font-semibold mb-6   pb-2 text-[#1486e5]">Stay Connected</h3>
+            <p className="text-gray-400 mb-5 text-sm">
               Get the latest updates and insights delivered to your inbox.
             </p>
-            
             {/* Newsletter Signup */}
             <form className="mb-6">
               <div className="flex">
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-teal-400 text-white placeholder-gray-400"
+                  className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-[#1e40af] text-white placeholder-gray-400 text-sm"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-gradient-to-r from-teal-600 to-amber-500 text-white rounded-r-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-200 font-medium"
+                  className="px-6 py-3 bg-[#1486e5] hover:bg-[#1d48c2] text-white rounded-r-lg transition font-semibold text-sm"
                 >
                   Subscribe
                 </button>
               </div>
             </form>
-
-            {/* Social Links */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-6 text-gray-500">
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 text-gray-400 hover:text-teal-400 transition-all duration-200"
-                  whileHover={{ scale: 1.1 }}
+                  className="p-2 rounded-lg hover:text-[#1486e5] transition-colors duration-200"
+                  whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-6 w-6" />
                 </motion.a>
               ))}
             </div>
@@ -182,14 +167,15 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="border-t border-gray-800 mt-12 pt-8 text-center"
+          className="border-t border-gray-800 mt-20 pt-10 text-center text-gray-500 text-sm font-light tracking-wide"
         >
-          <p className="text-gray-400">
-            © {currentYear} BrandCraft. All rights reserved. | 
-            <Link to="/privacy" className="hover:text-teal-400 transition-colors duration-200 ml-1">
+          <p>
+            © {currentYear} VConnect360. All rights reserved. |{' '}
+            <Link to="/privacy" className="hover:underline">
               Privacy Policy
-            </Link> | 
-            <Link to="/terms" className="hover:text-teal-400 transition-colors duration-200 ml-1">
+            </Link>{' '}
+            |{' '}
+            <Link to="/terms" className="hover:underline">
               Terms of Service
             </Link>
           </p>

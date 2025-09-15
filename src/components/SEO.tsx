@@ -15,18 +15,18 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'BrandCraft - Professional Branding & Marketing Agency',
+  title = 'VConnect360 - Professional Branding & Marketing Agency',
   description = 'Transform your business with our professional branding and marketing services. We create compelling brand experiences that drive growth and inspire audiences.',
   keywords = ['branding', 'marketing', 'design', 'digital agency', 'brand strategy'],
   image = '/og-image.jpg',
-  url = 'https://brandcraft.com',
+  url = 'https://VConnect360.com',
   type = 'website',
   author,
   publishedTime,
   modifiedTime,
   structuredData,
 }) => {
-  const fullTitle = title.includes('BrandCraft') ? title : `${title} | BrandCraft`;
+  const fullTitle = title.includes('VConnect360') ? title : `${title} | VConnect360`;
   const keywordsString = keywords.join(', ');
 
   return (
@@ -35,7 +35,7 @@ const SEO: React.FC<SEOProps> = ({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywordsString} />
-      <meta name="author" content={author || 'BrandCraft Team'} />
+      <meta name="author" content={author || 'VConnect360 Team'} />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
@@ -46,7 +46,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:site_name" content="BrandCraft" />
+      <meta property="og:site_name" content="VConnect360" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter Card Tags */}
@@ -54,8 +54,8 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:site" content="@brandcraft" />
-      <meta name="twitter:creator" content="@brandcraft" />
+      <meta name="twitter:site" content="@VConnect360" />
+      <meta name="twitter:creator" content="@VConnect360" />
 
       {/* Article specific tags */}
       {type === 'article' && (

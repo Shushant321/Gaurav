@@ -79,11 +79,11 @@ const About = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About BrandCraft",
-    "description": "Learn about BrandCraft's mission, values, and the passionate team behind our award-winning branding and marketing services.",
+    "name": "About VConnect360",
+    "description": "Learn about VConnect360's mission, values, and the passionate team behind our award-winning branding and marketing services.",
     "mainEntity": {
       "@type": "Organization",
-      "name": "BrandCraft",
+      "name": "VConnect360",
       "foundingDate": "2018",
       "founders": [
         {
@@ -98,7 +98,7 @@ const About = () => {
     <>
       <SEO
         title="About Us - Our Story & Mission"
-        description="Learn about BrandCraft's mission, values, and the passionate team behind our award-winning branding and marketing services."
+        description="Learn about VConnect360's mission, values, and the passionate team behind our award-winning branding and marketing services."
         keywords={['about us', 'company story', 'mission', 'values', 'team']}
         structuredData={structuredData}
       />
@@ -114,7 +114,7 @@ const About = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Crafting Brands That{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                 Matter
               </span>
             </h1>
@@ -142,7 +142,7 @@ const About = () => {
               <div className="space-y-4 text-gray-600">
                 <p>
                   Founded in 2018 by a group of creative visionaries and strategic minds, 
-                  BrandCraft emerged from a simple belief: every business deserves a brand 
+                  VConnect360 emerged from a simple belief: every business deserves a brand 
                   that truly represents its values and connects with its audience.
                 </p>
                 <p>
@@ -170,7 +170,7 @@ const About = () => {
                 alt="Our team collaborating"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-teal-600 to-amber-500 text-white p-6 rounded-xl">
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white p-6 rounded-xl">
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm opacity-90">Brands Transformed</div>
               </div>
@@ -208,8 +208,8 @@ const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-teal-100 to-amber-100 rounded-lg mb-4 group-hover:from-teal-600 group-hover:to-amber-500 transition-all duration-300">
-                  <value.icon className="h-6 w-6 text-teal-600 group-hover:text-white transition-colors duration-300" />
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-lg mb-4 group-hover:from-[#4f6ff2] group-hover:to-[#1fa1df] transition-all duration-300">
+                  <value.icon className="h-6 w-6 text-[#4f6ff2] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {value.title}
@@ -256,12 +256,12 @@ const About = () => {
                   <div className={`bg-gray-50 p-6 rounded-xl ${
                     index % 2 === 0 ? 'text-right' : 'text-left'
                   }`}>
-                    <div className="text-2xl font-bold text-teal-600 mb-2">{item.year}</div>
+                    <div className="text-2xl font-bold text-[#4f6ff2] mb-2">{item.year}</div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
                     <p className="text-gray-600">{item.description}</p>
                   </div>
                 </div>
-                <div className="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full mx-4"></div>
+                <div className="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] rounded-full mx-4"></div>
                 <div className="flex-1"></div>
               </motion.div>
             ))}
@@ -282,7 +282,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -293,7 +293,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-amber-500">
+      <section className="py-20 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -312,14 +312,14 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-white text-teal-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#4f6ff2] font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <CheckCircle className="mr-2 h-5 w-5" />
                 Start Your Project
               </Link>
               <Link
                 to="/team"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-teal-600 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#4f6ff2] transition-all duration-300 shadow-lg"
               >
                 Meet Our Team
                 <ArrowRight className="ml-2 h-5 w-5" />

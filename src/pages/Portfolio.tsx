@@ -129,7 +129,7 @@ const Portfolio = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "BrandCraft Portfolio",
+    "name": "VConnect360 Portfolio",
     "description": "Explore our portfolio of successful branding, design, and marketing projects that have transformed businesses and driven measurable results.",
     "mainEntity": {
       "@type": "ItemList",
@@ -142,7 +142,7 @@ const Portfolio = () => {
         "dateCreated": project.year,
         "creator": {
           "@type": "Organization",
-          "name": "BrandCraft"
+          "name": "VConnect360"
         }
       }))
     }
@@ -168,7 +168,7 @@ const Portfolio = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Our{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                 Portfolio
               </span>
             </h1>
@@ -196,7 +196,7 @@ const Portfolio = () => {
                 onClick={() => setActiveFilter(filter.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
                   activeFilter === filter.id
-                    ? 'bg-gradient-to-r from-teal-600 to-amber-500 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -271,7 +271,7 @@ const Portfolio = () => {
                     
                     {project.featured && (
                       <div className="absolute top-4 right-4">
-                        <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-teal-600 to-amber-500 text-white text-xs font-medium rounded-full">
+                        <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white text-xs font-medium rounded-full">
                           <Award className="w-3 h-3 mr-1" />
                           Featured
                         </span>
@@ -280,7 +280,7 @@ const Portfolio = () => {
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#4f6ff2] transition-colors duration-300">
                       {project.title}
                     </h3>
                     <p className="text-gray-600 mb-4">{project.description}</p>
@@ -289,13 +289,13 @@ const Portfolio = () => {
                     <div className="grid grid-cols-3 gap-4 mb-4">
                       {Object.entries(project.results).map(([key, value], resultIndex) => (
                         <div key={resultIndex} className="text-center">
-                          <div className="text-lg font-bold text-teal-600">{value}</div>
+                          <div className="text-lg font-bold text-[#4f6ff2]">{value}</div>
                           <div className="text-xs text-gray-500 capitalize">{key}</div>
                         </div>
                       ))}
                     </div>
                     
-                    <button className="inline-flex items-center text-teal-600 font-medium group-hover:text-amber-500 transition-colors duration-300">
+                    <button className="inline-flex items-center text-[#4f6ff2] font-medium group-hover:text-[#1fa1df] transition-colors duration-300">
                       View Case Study
                       <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
@@ -340,8 +340,8 @@ const Portfolio = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-100 to-amber-100 rounded-full mb-4">
-                  <stat.icon className="h-8 w-8 text-teal-600" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-4">
+                  <stat.icon className="h-8 w-8 text-[#4f6ff2]" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                   {stat.value}
@@ -354,7 +354,7 @@ const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-amber-500">
+      <section className="py-20 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -373,14 +373,14 @@ const Portfolio = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 bg-white text-teal-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#4f6ff2] font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-teal-600 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#4f6ff2] transition-all duration-300 shadow-lg"
               >
                 Our Services
               </Link>

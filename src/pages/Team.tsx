@@ -23,7 +23,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'sarah@brandcraft.com'
+        email: 'sarah@VConnect360.com'
       }
     },
     {
@@ -35,7 +35,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'david@brandcraft.com'
+        email: 'david@VConnect360.com'
       }
     },
     {
@@ -47,7 +47,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'emily@brandcraft.com'
+        email: 'emily@VConnect360.com'
       }
     },
     {
@@ -59,7 +59,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'michael@brandcraft.com'
+        email: 'michael@VConnect360.com'
       }
     },
     {
@@ -71,7 +71,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'jessica@brandcraft.com'
+        email: 'jessica@VConnect360.com'
       }
     },
     {
@@ -83,7 +83,7 @@ const Team = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'ryan@brandcraft.com'
+        email: 'ryan@VConnect360.com'
       }
     }
   ];
@@ -117,7 +117,7 @@ const Team = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BrandCraft",
+    "name": "VConnect360",
     "employee": teamMembers.map(member => ({
       "@type": "Person",
       "name": member.name,
@@ -132,7 +132,7 @@ const Team = () => {
   return (
     <>
       <SEO
-        title="Our Team - Meet the Experts Behind BrandCraft"
+        title="Our Team - Meet the Experts Behind VConnect360"
         description="Meet our talented team of strategists, designers, and marketers who are passionate about creating exceptional brand experiences."
         keywords={['our team', 'brand experts', 'marketing professionals', 'creative team']}
         structuredData={structuredData}
@@ -149,7 +149,7 @@ const Team = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Meet Our{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                 Amazing Team
               </span>
             </h1>
@@ -174,8 +174,8 @@ const Team = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-100 to-amber-100 rounded-full mb-4">
-                  <stat.icon className="h-8 w-8 text-teal-600" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-4">
+                  <stat.icon className="h-8 w-8 text-[#4f6ff2]" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                   {stat.value}
@@ -254,7 +254,7 @@ const Team = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-teal-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-[#4f6ff2] font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 mb-4">{member.bio}</p>
                   
                   <div className="flex flex-wrap gap-2">
@@ -302,8 +302,8 @@ const Team = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="bg-gradient-to-r from-teal-100 to-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-teal-600 to-amber-500 rounded-full"></div>
+                <div className="bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] rounded-full"></div>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {value.title}
@@ -343,7 +343,7 @@ const Team = () => {
                       <h4 className="font-medium text-gray-900">Senior Brand Strategist</h4>
                       <p className="text-gray-600">Full-time • Remote</p>
                     </div>
-                    <button className="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-200">
+                    <button className="px-4 py-2 bg-[#4f6ff2] text-white rounded-lg hover:bg-[#03045e] transition-colors duration-200">
                       Apply
                     </button>
                   </div>
@@ -352,7 +352,7 @@ const Team = () => {
                       <h4 className="font-medium text-gray-900">Digital Marketing Specialist</h4>
                       <p className="text-gray-600">Full-time • New York</p>
                     </div>
-                    <button className="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-200">
+                    <button className="px-4 py-2 bg-[#4f6ff2] text-white rounded-lg hover:bg-[#03045e] transition-colors duration-200">
                       Apply
                     </button>
                   </div>
@@ -363,7 +363,7 @@ const Team = () => {
                 </p>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-600 to-amber-500 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-300"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300"
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Send Us Your Resume

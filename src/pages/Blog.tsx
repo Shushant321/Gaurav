@@ -125,12 +125,12 @@ const Blog = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "BrandCraft Blog",
-    "description": "Expert insights on branding, marketing, and business strategy from the BrandCraft team.",
-    "url": "https://brandcraft.com/blog",
+    "name": "VConnect360 Blog",
+    "description": "Expert insights on branding, marketing, and business strategy from the VConnect360 team.",
+    "url": "https://VConnect360.com/blog",
     "publisher": {
       "@type": "Organization",
-      "name": "BrandCraft"
+      "name": "VConnect360"
     },
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",
@@ -175,7 +175,7 @@ const Blog = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Brand{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] bg-clip-text text-transparent">
                 Insights
               </span>
             </h1>
@@ -223,7 +223,7 @@ const Blog = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                     selectedCategory === category.id
-                      ? 'bg-gradient-to-r from-teal-600 to-amber-500 text-white shadow-lg'
+                      ? 'bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white shadow-lg'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -272,7 +272,7 @@ const Blog = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute top-4 left-4">
-                      <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-teal-600 to-amber-500 text-white text-sm font-medium rounded-full">
+                      <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white text-sm font-medium rounded-full">
                         <TrendingUp className="w-3 h-3 mr-1" />
                         Featured
                       </span>
@@ -292,7 +292,7 @@ const Blog = () => {
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300 line-clamp-2">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4f6ff2] transition-colors duration-300 line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
@@ -318,7 +318,7 @@ const Blog = () => {
                     
                     <Link
                       to={`/blog/${post.id}`}
-                      className="inline-flex items-center text-teal-600 font-medium group-hover:text-amber-500 transition-colors duration-300"
+                      className="inline-flex items-center text-[#4f6ff2] font-medium group-hover:text-[#1fa1df] transition-colors duration-300"
                     >
                       Read More
                       <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -375,7 +375,7 @@ const Blog = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300 line-clamp-2">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-[#4f6ff2] transition-colors duration-300 line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4 text-sm line-clamp-3">{post.excerpt}</p>
@@ -403,7 +403,7 @@ const Blog = () => {
                   
                   <Link
                     to={`/blog/${post.id}`}
-                    className="inline-flex items-center text-teal-600 font-medium text-sm group-hover:text-amber-500 transition-colors duration-300"
+                    className="inline-flex items-center text-[#4f6ff2] font-medium text-sm group-hover:text-[#1fa1df] transition-colors duration-300"
                   >
                     Read Article
                     <ArrowRight className="ml-1 h-3 w-3 group-hover:translate-x-1 transition-transform duration-300" />
@@ -425,7 +425,7 @@ const Blog = () => {
                   setSearchTerm('');
                   setSelectedCategory('all');
                 }}
-                className="mt-4 px-6 py-3 bg-gradient-to-r from-teal-600 to-amber-500 text-white font-semibold rounded-lg hover:from-teal-700 hover:to-amber-600 transition-all duration-300"
+                className="mt-4 px-6 py-3 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300"
               >
                 Clear Filters
               </button>
@@ -435,7 +435,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-amber-500">
+      <section className="py-20 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -461,7 +461,7 @@ const Blog = () => {
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-white text-teal-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="px-8 py-3 bg-white text-[#4f6ff2] font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Subscribe
               </button>
