@@ -22,86 +22,74 @@ const Services = () => {
     {
       icon: Target,
       title: "Public Relations",
-      description:
-        "Building strong media connections, shaping public perception, and managing brand reputation with strategic PR campaigns.",
+      description: "...",
       features: [
         "Press Releases & Media Outreach",
         "Crisis Communication",
         "Brand Reputation Management",
         "Event PR & Media Coverage",
       ],
-      image:
-        "/ser1.jpg",
+      image: "/ser1.jpg",
     },
     {
       icon: Palette,
       title: "Investor Relations",
-      description:
-        "Creating transparent communication strategies that strengthen trust and confidence among stakeholders and investors.",
+      description: "...",
       features: [
         "Investor Presentations",
         "Annual & Financial Reports",
         "Shareholder Communication",
         "Market Insights & Analysis",
       ],
-      image:
-        "ser2.jpg",
+      image: "/ser2.jpg",
     },
     {
       icon: Globe,
       title: "Internal Communication",
-      description:
-        "Enhancing workplace engagement through seamless communication channels and collaborative platforms.",
+      description: "...",
       features: [
         "Employee Newsletters",
         "Intranet & Workplace Portals",
         "Training & Onboarding Materials",
         "Team Collaboration Tools",
       ],
-      image:
-        "ser5.jpg",
+      image: "/ser5.jpg",
     },
     {
       icon: TrendingUp,
       title: "Media Training",
-      description:
-        "Preparing leaders and teams to confidently face media interviews, public appearances, and digital communications.",
+      description: "...",
       features: [
         "Interview Coaching",
         "Crisis Response Training",
         "Presentation Skills",
         "On-Camera Confidence",
       ],
-      image:
-        "ser3.jpg",
+      image: "/ser3.jpg",
     },
     {
       icon: PenTool,
       title: "Content Marketing",
-      description:
-        "Crafting impactful stories and digital content that attract, educate, and convert your target audience.",
+      description: "...",
       features: [
         "Blog Writing & Copywriting",
         "Video & Podcast Production",
         "Social Media Content",
         "Infographics & Visual Storytelling",
       ],
-      image:
-        "ser4.jpg",
+      image: "/ser4.jpg",
     },
     {
       icon: BarChart3,
       title: "Startup Communication",
-      description:
-        "Helping startups build credibility, attract investors, and connect with audiences through clear and powerful communication.",
+      description: "...",
       features: [
         "Pitch Deck Design",
         "Investor Messaging",
         "Brand Narrative Development",
         "Growth Communication Strategy",
       ],
-      image:
-        "ser6.jpg",
+      image: "/ser6.jpg",
     },
   ];
 
