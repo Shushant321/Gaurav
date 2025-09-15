@@ -31,21 +31,21 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const services = [
-    'Brand Strategy',
-    'Creative Design',
-    'Digital Marketing',
-    'Web Development',
-    'Content Creation',
-    'Consulting',
+    'Public Relations',
+    'Investor Relations',
+    'Internal Communication',
+    'Media Training',
+    'Content Marketing',
+    'Startup Communication',
     'Other'
   ];
 
   const budgetRanges = [
-    '$5,000 - $15,000',
-    '$15,000 - $30,000',
-    '$30,000 - $50,000',
-    '$50,000 - $100,000',
-    '$100,000+'
+    ' ₹5,000 -  ₹15,000',
+    ' ₹15,000 -  ₹30,000',
+    ' ₹30,000 -  ₹50,000',
+    ' ₹50,000 -  ₹100,000',
+    ' ₹100,000+'
   ];
 
   const timelineOptions = [

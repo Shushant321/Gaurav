@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
+  Target,
+  Palette,
+  BarChart3,
   ArrowRight, 
   Star, 
   Users, 
@@ -11,6 +14,10 @@ import {
   Quote
 } from 'lucide-react';
 import SEO from '../components/SEO';
+
+import ser1 from "../assets/ser1.jpg";
+import ser2 from "../assets/ser2.jpg";
+import ser6 from "../assets/ser6.jpg";
 
 const Home = () => {
   const stats = [
@@ -22,20 +29,41 @@ const Home = () => {
 
   const services = [
     {
-      title: 'Brand Strategy',
-      description: 'Comprehensive brand positioning and strategy development',
-      image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=400'
+      icon: Target,
+      title: "Public Relations",
+      description: 'Building strong media connections, shaping public perception, and managing brand reputation with strategic PR campaigns.',
+      features: [
+        "Press Releases & Media Outreach",
+        "Crisis Communication",
+        "Brand Reputation Management",
+        "Event PR & Media Coverage",
+      ],
+      image: ser1,  // imported image use karo
     },
     {
-      title: 'Digital Marketing',
-      description: 'Multi-channel digital campaigns that drive results',
-      image: 'https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=400'
+      icon: Palette,
+      title: "Investor Relations",
+      description: 'Creating transparent communication strategies that strengthen trust and confidence among stakeholders and investors.',
+      features: [
+        "Investor Presentations",
+        "Annual & Financial Reports",
+        "Shareholder Communication",
+        "Market Insights & Analysis",
+      ],
+      image: ser2,
     },
     {
-      title: 'Creative Design',
-      description: 'Stunning visual identity and creative solutions',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
+      icon: BarChart3,
+      title: "Startup Communication",
+      description:  'Helping startups build credibility, attract investors, and connect with audiences through clear and powerful communication.',
+      features: [
+        "Pitch Deck Design",
+        "Investor Messaging",
+        "Brand Narrative Development",
+        "Growth Communication Strategy",
+      ],
+      image: ser6,
+    }
   ];
 
   const testimonials = [

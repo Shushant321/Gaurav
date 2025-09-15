@@ -29,7 +29,7 @@ const Services = () => {
     {
       icon: Target,
       title: "Public Relations",
-      description: "...",
+      description: 'Building strong media connections, shaping public perception, and managing brand reputation with strategic PR campaigns.',
       features: [
         "Press Releases & Media Outreach",
         "Crisis Communication",
@@ -41,7 +41,7 @@ const Services = () => {
     {
       icon: Palette,
       title: "Investor Relations",
-      description: "...",
+      description: 'Creating transparent communication strategies that strengthen trust and confidence among stakeholders and investors.',
       features: [
         "Investor Presentations",
         "Annual & Financial Reports",
@@ -53,7 +53,7 @@ const Services = () => {
     {
       icon: Globe,
       title: "Internal Communication",
-      description: "...",
+      description: 'Enhancing workplace engagement through seamless communication channels and collaborative platforms.',
       features: [
         "Employee Newsletters",
         "Intranet & Workplace Portals",
@@ -65,7 +65,7 @@ const Services = () => {
     {
       icon: TrendingUp,
       title: "Media Training",
-      description: "...",
+      description: 'Preparing leaders and teams to confidently face media interviews, public appearances, and digital communications.',
       features: [
         "Interview Coaching",
         "Crisis Response Training",
@@ -77,7 +77,7 @@ const Services = () => {
     {
       icon: PenTool,
       title: "Content Marketing",
-      description: "...",
+      description: 'Crafting impactful stories and digital content that attract, educate, and convert your target audience.',
       features: [
         "Blog Writing & Copywriting",
         "Video & Podcast Production",
@@ -89,7 +89,7 @@ const Services = () => {
     {
       icon: BarChart3,
       title: "Startup Communication",
-      description: "...",
+      description:  'Helping startups build credibility, attract investors, and connect with audiences through clear and powerful communication.',
       features: [
         "Pitch Deck Design",
         "Investor Messaging",

@@ -24,10 +24,10 @@ const Footer = () => {
   ];
 
   const services = [
-    'Brand Strategy',
-    'Digital Marketing',
-    'Web Design',
-    'Content Creation',
+    'Public Relations',
+    'Media Training',
+    'Content Marketing',
+    'Startup Communication',
   ];
 
   const socialLinks = [
