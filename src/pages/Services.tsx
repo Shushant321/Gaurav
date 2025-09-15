@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Target,
@@ -17,6 +16,14 @@ import {
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 
+// Images import karo yahan src/assets se
+import ser1 from "../assets/ser1.jpg";
+import ser2 from "../assets/ser2.jpg";
+import ser3 from "../assets/ser3.jpg";
+import ser4 from "../assets/ser4.jpg";
+import ser5 from "../assets/ser5.jpg";
+import ser6 from "../assets/ser6.jpg";
+
 const Services = () => {
   const mainServices = [
     {
@@ -29,7 +36,7 @@ const Services = () => {
         "Brand Reputation Management",
         "Event PR & Media Coverage",
       ],
-      image: "/ser1.jpg",
+      image: ser1,  // imported image use karo
     },
     {
       icon: Palette,
@@ -41,7 +48,7 @@ const Services = () => {
         "Shareholder Communication",
         "Market Insights & Analysis",
       ],
-      image: "/ser2.jpg",
+      image: ser2,
     },
     {
       icon: Globe,
@@ -53,7 +60,7 @@ const Services = () => {
         "Training & Onboarding Materials",
         "Team Collaboration Tools",
       ],
-      image: "/ser5.jpg",
+      image: ser5,
     },
     {
       icon: TrendingUp,
@@ -65,7 +72,7 @@ const Services = () => {
         "Presentation Skills",
         "On-Camera Confidence",
       ],
-      image: "/ser3.jpg",
+      image: ser3,
     },
     {
       icon: PenTool,
@@ -77,7 +84,7 @@ const Services = () => {
         "Social Media Content",
         "Infographics & Visual Storytelling",
       ],
-      image: "/ser4.jpg",
+      image: ser4,
     },
     {
       icon: BarChart3,
@@ -89,7 +96,7 @@ const Services = () => {
         "Brand Narrative Development",
         "Growth Communication Strategy",
       ],
-      image: "/ser6.jpg",
+      image: ser6,
     },
   ];
 

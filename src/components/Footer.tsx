@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+// Logo import karo yahan
+import logo2 from "../assets/logo2.png";
+
 import { 
   MapPin, 
   Phone, 
@@ -48,7 +51,7 @@ const Footer = () => {
           >
             <Link to="/" className="flex items-center space-x-3 group mb-6">
               <img
-                src="/logo2.png"
+                src={logo2}
                 alt="VConnect360 Logo"
                 className="h-14 w-14 object-contain group-hover:opacity-90 transition-opacity duration-300"
               />

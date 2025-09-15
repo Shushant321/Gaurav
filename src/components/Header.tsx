@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+// Logo import karo yahan
+import logo2 from "../assets/logo2.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +30,6 @@ const Header = () => {
     { to: "/services", label: "Services" },
     { to: "/team", label: "Team" },
     { to: "/portfolio", label: "Portfolio" },
-    // { to: '/blog', label: 'Blog' },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -45,13 +47,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <img
-              src="/logo2.png" // apni image ka sahi path do! (e.g., '/assets/vconnect360_logo.png' ya './logo.jpg')
+              src={logo2}
               alt="VConnect360 Logo"
-              className="h-12 w-12 min-h-[10rem] min-w-[10rem] object-contain group-hover:opacity-90 transition-opacity duration-300"
+              className="h-12 w-12 object-contain group-hover:opacity-90 transition-opacity duration-300"
             />
-            {/* <span className="text-xl lg:text-2xl font-bold text-[#005A9C]">
-              VConnect360
-            </span> */}
           </Link>
 
           {/* Desktop Navigation */}
