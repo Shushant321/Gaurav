@@ -11,7 +11,6 @@ import {
   MessageSquare
 } from 'lucide-react';
 import SEO from '../components/SEO';
-import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,11 +40,11 @@ const Contact = () => {
   ];
 
   const budgetRanges = [
-    ' ₹5,000 -  ₹15,000',
-    ' ₹15,000 -  ₹30,000',
-    ' ₹30,000 -  ₹50,000',
-    ' ₹50,000 -  ₹100,000',
-    ' ₹100,000+'
+    '₹5,000 - ₹15,000',
+    '₹15,000 - ₹30,000',
+    '₹30,000 - ₹50,000',
+    '₹50,000 - ₹100,000',
+    '₹100,000+'
   ];
 
   const timelineOptions = [
@@ -58,7 +57,6 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
-
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -71,39 +69,39 @@ const Contact = () => {
     if (formData.message.trim().length < 10) {
       newErrors.message = 'Message must be at least 10 characters';
     }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if (!validateForm()) return;
-
     setIsSubmitting(true);
-
     try {
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID',        // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID',       // Replace with your EmailJS Template ID
-        e.currentTarget,
-        'YOUR_USER_ID'            // Replace with your EmailJS User ID
-      );
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        budget: '',
-        message: '',
-        timeline: '',
-        referral: ''
+      // Backend API URL ko apne actual URL se replace karo
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-    } catch(error) {
-      alert('Failed to send message. Please try again later.');
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          service: '',
+          budget: '',
+          message: '',
+          timeline: '',
+          referral: ''
+        });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -178,7 +176,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-md mx-auto text-center p-8"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#1486e5] to-[#2abbd8] rounded-full mb-6">
               <CheckCircle className="h-10 w-10 text-[#4f6ff2]" />
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Message Sent!</h1>
@@ -229,6 +227,7 @@ const Contact = () => {
         </div>
       </section>
 
+      
       {/* Contact Info Cards */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
