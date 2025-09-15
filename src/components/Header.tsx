@@ -49,7 +49,7 @@ const Header = () => {
             <img
               src={logo2}
               alt="VConnect360 Logo"
-              className="h-12 w-12 object-contain group-hover:opacity-90 transition-opacity duration-300"
+              className="h-12 w-12 min-h-[10rem] min-w-[10rem] object-contain group-hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
 
