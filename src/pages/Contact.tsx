@@ -79,7 +79,7 @@ const Contact = () => {
     setIsSubmitting(true);
     try {
       // Backend API URL ko apne actual URL se replace karo
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://gaurav-u098.onrender.com/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -227,7 +227,7 @@ const Contact = () => {
         </div>
       </section>
 
-      
+
       {/* Contact Info Cards */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
