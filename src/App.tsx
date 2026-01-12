@@ -9,7 +9,12 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Team from './pages/Team';
 import Portfolio from './pages/Portfolio';
+import CaseStudyGlammonn from './pages/CaseStudyGlammonn';
+import CaseStudyEntrepreneurship from './pages/CaseStudyEntrepreneurship';
+import CaseStudyEducation from './pages/CaseStudyEducation';
 // import Blog from './pages/Blog';
+import AnkitKumar from './pages/AnkitKumar';
+import PrakashManipuri from './pages/PrakashManipuri';
 import Contact from './pages/Contact';
 
 function App() {
@@ -26,6 +31,11 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/team" element={<Team />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/case-study/glammonn" element={<CaseStudyGlammonn />} />
+              <Route path="/case-study/entrepreneurship" element={<CaseStudyEntrepreneurship />} />
+              <Route path="/case-study/education" element={<CaseStudyEducation />} />
+              <Route path="/team/ankit-kumar" element={<AnkitKumar />} />
+              <Route path="/team/prakash-manipuri" element={<PrakashManipuri />} />
               {/* <Route path="/blog" element={<Blog />} /> */}
               <Route path="/contact" element={<Contact />} />
             </Routes>

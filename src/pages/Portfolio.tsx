@@ -11,114 +11,76 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import beauty from '../assets/beauty.jfif';
+import entrepreneurship from '../assets/entrepreneurship.jfif';
+import edu1 from '../assets/edu1.jfif';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filters = [
     { id: 'all', label: 'All Projects' },
-    { id: 'branding', label: 'Branding' },
-    { id: 'web-design', label: 'Web Design' },
-    { id: 'marketing', label: 'Marketing' },
-    { id: 'identity', label: 'Identity' }
+    { id: 'lifestyle', label: 'Lifestyle & Fashion' },
+    { id: 'branding', label: 'Branding & PR' }
   ];
 
   const projects = [
     {
       id: 1,
-      title: 'TechStart Innovation',
-      category: 'branding',
-      tags: ['Brand Strategy', 'Visual Identity', 'Guidelines'],
-      description: 'Complete brand transformation for a cutting-edge tech startup, including strategy, visual identity, and brand guidelines.',
-      image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'GlammOnn Miss & Mrs India Worldwide 2025',
+      category: 'lifestyle',
+      tags: ['LIFESTYLE', 'FASHION', 'ENTERTAINMENT'],
+      description: 'We secured national-level coverage in The Tribune via ANI for the prestigious GlammOnn Miss & Mrs India Worldwide 2025, spotlighting Nehaa Shastri\'s crowning moment.',
+      image: beauty,
       results: {
-        engagement: '+250%',
-        recognition: '+180%',
-        conversion: '+90%'
+        coverage: 'National',
+        platform: 'ANI + Tribune',
+        reach: 'Pan-India'
       },
-      year: '2023',
-      client: 'TechStart Inc.',
-      featured: true
+      year: '2025',
+      client: 'GlammOnn',
+      featured: true,
+      publication: 'The Tribune (via ANI)',
+      segment: 'Beauty, Fashion, Events & Personal Brands',
+      coverageType: 'National News + Image Building PR'
     },
     {
       id: 2,
-      title: 'EcoLux Sustainable Living',
-      category: 'web-design',
-      tags: ['Web Design', 'E-commerce', 'UX/UI'],
-      description: 'Modern e-commerce platform design for sustainable living products with focus on user experience and conversion optimization.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'ENTREPRENEURSHIP & STARTUPS',
+      category: 'branding',
+      tags: ['ENTREPRENEURSHIP', 'STARTUPS', 'FUNDING'],
+      description: 'BabyOrgano — ₹20 Cr Funding Announcement, Piramal / Lacto Calamine — Brand Refresh & Growth Vision, Centre For Sight — Celebrity Campaign Launch',
+      image: entrepreneurship,
       results: {
-        sales: '+320%',
-        traffic: '+150%',
-        retention: '+200%'
+        funding: '₹20 Cr',
+        publications: '3 Major',
+        campaigns: 'Celebrity'
       },
-      year: '2023',
-      client: 'EcoLux',
-      featured: true
+      year: '2024',
+      client: 'Multiple Startups',
+      featured: true,
+      publication: 'Entrepreneur India + Business Standard + Adgully',
+      segment: 'Startups, Healthcare & Consumer Brands',
+      coverageType: 'Funding + Campaign + Leadership'
     },
     {
       id: 3,
-      title: 'Urban Fitness Revolution',
-      category: 'marketing',
-      tags: ['Digital Marketing', 'Social Media', 'Content'],
-      description: 'Comprehensive digital marketing campaign that transformed a local gym into a fitness community brand.',
-      image: 'https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800',
-      results: {
-        membership: '+400%',
-        social: '+280%',
-        revenue: '+300%'
-      },
-      year: '2023',
-      client: 'Urban Fitness',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Artisan Coffee Co.',
-      category: 'identity',
-      tags: ['Logo Design', 'Packaging', 'Brand Identity'],
-      description: 'Artisanal coffee brand identity that captures the craft and passion behind every cup.',
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      results: {
-        recognition: '+200%',
-        sales: '+180%',
-        loyalty: '+150%'
-      },
-      year: '2022',
-      client: 'Artisan Coffee Co.',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'MindfulTech Solutions',
+      title: 'EDUCATION, POLICY & GOVERNMENT',
       category: 'branding',
-      tags: ['Brand Strategy', 'Positioning', 'Messaging'],
-      description: 'Strategic brand positioning for a wellness technology company focusing on mental health solutions.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['EDUCATION', 'POLICY', 'GOVERNMENT'],
+      description: 'FIIB Student at United Nations (UNGA 2025), Aviation Infrastructure Update — IndiGo & Navi Mumbai Airport',
+      image: edu1,
       results: {
-        funding: '+500%',
-        users: '+300%',
-        awareness: '+250%'
+        coverage: 'National',
+        publications: 'ANI + Hindu',
+        sectors: 'Multi-Sector'
       },
-      year: '2022',
-      client: 'MindfulTech',
-      featured: true
-    },
-    {
-      id: 6,
-      title: 'Heritage Restaurant Group',
-      category: 'web-design',
-      tags: ['Web Design', 'Mobile App', 'Reservations'],
-      description: 'Digital transformation for a restaurant group with online reservations and ordering system.',
-      image: 'https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&cs=tinysrgb&w=800',
-      results: {
-        reservations: '+280%',
-        orders: '+220%',
-        satisfaction: '+90%'
-      },
-      year: '2022',
-      client: 'Heritage Group',
-      featured: false
+      year: '2025',
+      client: 'Education & Aviation',
+      featured: true,
+      publication: 'ANI + The Hindu + ET Brand Equity',
+      segment: 'Education, Aviation & Luxury',
+      coverageType: 'Strategic PR + National Coverage'
     }
   ];
 
@@ -218,7 +180,7 @@ const Portfolio = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.6 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+              className="grid gap-8 max-w-6xl mx-auto"
             >
               {filteredProjects.map((project, index) => (
                 <motion.div
@@ -226,17 +188,13 @@ const Portfolio = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className={`group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                    project.featured ? 'md:col-span-2 lg:col-span-2' : ''
-                  }`}
+                  className="group bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100"
                 >
                   <div className="relative overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className={`w-full object-cover group-hover:scale-110 transition-transform duration-700 ${
-                        project.featured ? 'h-64 md:h-80' : 'h-48'
-                      }`}
+                      className="w-full h-80 object-cover object-top group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     
@@ -279,26 +237,29 @@ const Portfolio = () => {
                     )}
                   </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#4f6ff2] transition-colors duration-300">
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#4f6ff2] transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
                     
                     {/* Results */}
-                    <div className="grid grid-cols-3 gap-4 mb-4">
+                    <div className="grid grid-cols-3 gap-4 mb-6">
                       {Object.entries(project.results).map(([key, value], resultIndex) => (
-                        <div key={resultIndex} className="text-center">
-                          <div className="text-lg font-bold text-[#4f6ff2]">{value}</div>
+                        <div key={resultIndex} className="text-center p-3 bg-gray-50 rounded-lg">
+                          <div className="text-lg font-bold text-[#4f6ff2] mb-1">{value}</div>
                           <div className="text-xs text-gray-500 capitalize">{key}</div>
                         </div>
                       ))}
                     </div>
                     
-                    <button className="inline-flex items-center text-[#4f6ff2] font-medium group-hover:text-[#1fa1df] transition-colors duration-300">
+                    <Link
+                      to={project.id === 1 ? "/case-study/glammonn" : project.id === 2 ? "/case-study/entrepreneurship" : project.id === 3 ? "/case-study/education" : "#"}
+                      className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#4f6ff2] to-[#1fa1df] text-white font-semibold rounded-lg hover:from-[#03045e] hover:to-[#1fa1df] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
                       View Case Study
-                      <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </button>
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
                   </div>
                 </motion.div>
               ))}
@@ -325,12 +286,11 @@ const Portfolio = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: TrendingUp, value: '300%', label: 'Average ROI' },
-              { icon: Users, value: '500+', label: 'Happy Clients' },
-              { icon: Award, value: '25+', label: 'Awards Won' },
-              { icon: ExternalLink, value: '98%', label: 'Success Rate' }
+              { icon: TrendingUp, value: '₹20 Cr+', label: 'Funding Secured' },
+              { icon: Users, value: '50+', label: 'Media Publications' },
+              { icon: Award, value: '100%', label: 'Success Rate' }
             ].map((stat, index) => (
               <motion.div
                 key={index}

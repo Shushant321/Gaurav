@@ -10,6 +10,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import newone from '../assets/newone.jpg';
 import SEO from '../components/SEO';
 
 const Home = () => {
@@ -105,7 +106,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{backgroundImage: `url(${newone})`}} />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -179,19 +180,22 @@ const Home = () => {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2018 by a group of creative visionaries and strategic minds, 
-                  VConnect360 emerged from a simple belief: every business deserves a brand 
-                  that truly represents its values and connects with its audience.
+                  At VConnect 360, our approach begins with clear problem definition and custom-built solutions. In an industry that often runs on fixed templates and repetitive processes, we believe every brand deserves a strategy that is as unique as its story. We don't sell formats — we design solutions. And we execute them with speed, precision, and purpose.
                 </p>
                 <p>
-                  What started as a small creative studio has evolved into a full-service 
-                  branding and marketing agency. We've had the privilege of working with 
-                  startups finding their voice and Fortune 500 companies reinventing themselves.
+                  Our business is built on a few simple beliefs. In today's noisy and low-trust world, we believe reputation is built more by actions than announcements. Communication works best when it is supported by behaviour, consistency, and credibility. We also believe that strong relationships create strong brands, and that trust, transparency, and fairness are not optional — they are essential.
                 </p>
                 <p>
-                  Our journey has been marked by countless late nights, creative breakthroughs, 
-                  and the joy of seeing our clients succeed. Each project teaches us something new, 
-                  and we bring that collective wisdom to every brand we touch.
+                  As an organisation, we practice what we recommend. Our culture is our biggest strength. It is shaped by integrity, simplicity, accountability, and continuous improvement. We believe in constant, incremental innovation — not for awards, but for creating real value for our clients and their businesses.
+                </p>
+                <p>
+                  We are a purpose-driven firm and we choose our partnerships carefully. We work with brands that believe in building long-term value, not short-term hype. Our focus is on meaningful growth, not just momentary noise.
+                </p>
+                <p className="font-semibold text-gray-800">
+                  At VConnect 360, every campaign is designed with one clear goal: to create maximum impact at the most efficient cost. That's not just our tagline. That's our way of working.
+                </p>
+                <p className="text-lg font-bold text-[#4f6ff2]">
+                  Minimum Cost. Maximum Buzz.
                 </p>
               </div>
             </motion.div>
