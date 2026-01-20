@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import prakash from '../assets/prakash.jfif';
+import ankit from '../assets/ankit.jfif';
 import SEO from '../components/SEO';
 
 const Team = () => {
@@ -19,7 +20,7 @@ const Team = () => {
       name: 'Ankit Kumar',
       role: 'Founder & CEO',
       bio: 'Seasoned Public Relations professional with over nine years of experience in the core PR industry. Successfully managed communication strategies for prominent brands including Paytm, Videocon, ASUS, Mercedes-Benz, and several other industry leaders.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: ankit,
       expertise: ['Public Relations', 'Brand Positioning', 'Strategic Communication'],
       social: {
         linkedin: '#',
@@ -113,32 +114,6 @@ const Team = () => {
               and driving your business forward.
             </p>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#1486e5] to-[#2abbd8]rounded-full mb-4">
-                  <stat.icon className="h-8 w-8 text-[#4f6ff2]" />
-                </div>
-                <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -119,20 +119,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567\nMon-Fri, 9AM-6PM EST',
+      content: '+91 93041 79208\n+91 9742945218\nMon-Fri, 9AM-6PM IST',
       action: 'Call Now'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@VConnect360.com\nWe respond within 24 hours',
+      content: 'pr.vconnect360@gmail.com\nWe respond within 24 hours',
       action: 'Send Email'
-    },
-    {
-      icon: MessageSquare,
-      title: 'Live Chat',
-      content: 'Available during business hours\nGet instant responses',
-      action: 'Start Chat'
     },
     {
       icon: MapPin,
@@ -148,8 +142,8 @@ const Contact = () => {
     "mainEntity": {
       "@type": "Organization",
       "name": "VConnect360",
-      "telephone": "+1-555-123-4567",
-      "email": "hello@VConnect360.com",
+      "telephone": "+91-93041-79208",
+      "email": "pr.vconnect360@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Business Ave, Suite 100",
@@ -231,7 +225,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={index}

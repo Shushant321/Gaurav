@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import newone from "../assets/newone.jpg";
 
 // Images import karo yahan src/assets se
 import ser1 from "../assets/ser1.jpg";
@@ -383,7 +384,7 @@ const Services = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={newone}
                 alt="Team working on strategy"
                 className="rounded-2xl shadow-2xl"
               />

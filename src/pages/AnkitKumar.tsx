@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Linkedin, Twitter, Mail, Award, Users, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import ankit from '../assets/ankit.jfif'
+
 
 const AnkitKumar = () => {
   return (
@@ -34,7 +36,7 @@ const AnkitKumar = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={ankit}
                 alt="Ankit Kumar"
                 className="w-full rounded-2xl shadow-2xl"
               />
